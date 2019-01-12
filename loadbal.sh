@@ -27,5 +27,5 @@ server {
 
 }" >> /etc/nginx/sites-enabled/default
 sudo service nginx start
-echo "Machine: lb1" >> /usr/share/nginx/html/index.html
+echo "Host: lb1" >> /usr/share/nginx/html/index.html
 echo 'Provision lb1 complete'
