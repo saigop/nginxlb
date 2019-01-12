@@ -1,9 +1,13 @@
 #!/bin/bash
 
+#Update OS and install Nginx App
+
 echo 'Starting Provision: lb1'
 sudo apt-get update
 sudo apt-get install -y nginx
 sudo service nginx stop
+
+# Setup the Load Balancer
 sudo rm -rf /etc/nginx/sites-enabled/default
 sudo touch /etc/nginx/sites-enabled/default
 echo "upstream nodecluster {
