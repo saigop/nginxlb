@@ -7,8 +7,8 @@ sudo service nginx stop
 sudo rm -rf /etc/nginx/sites-enabled/default
 sudo touch /etc/nginx/sites-enabled/default
 echo "upstream nodecluster {
-        server 192.168.1.11;
-        server 192.168.1.12;
+        server 192.168.0.11;
+        server 192.168.0.12;
 }
 
 server {
